@@ -1,3 +1,5 @@
+--Project Group 32 - CaffeineOverflow - Data Definition Queries
+
 CREATE TABLE Customers(
      customerID INT(20) AUTO_INCREMENT PRIMARY KEY NOT NULL,
      customerName VARCHAR(255) NOT NULL,
