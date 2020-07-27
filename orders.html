@@ -1,0 +1,62 @@
+<!DOCTYPE HTML>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>The Busy Bean Database</title>
+
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="style.css"/>
+</head>
+
+<body>
+    <h2>The Busy Bean Database</h2>
+    <h3>By Reed Hardin & Kazu Ishihara</h3>
+    <a href="index.html">Main</a></br></br>
+    <h2>Add a New Order or Remove a Current Order</h2>
+    <p>INSERT to a table Orders or DELETE a row from a table Orders.</p>
+
+<div id="main">	
+<form id="newOrder">
+    <span><label>Customr ID:
+    <input type="number" name="custID" id="custID" min="1"/></label></span><br/>
+    
+    <span><label>Order Date
+    <input type="date" name="order_date" id="order_date"/></label></span><br/>
+    
+    <span><label>Shipped Date:
+    <input type="date" name="shipped_date" id="shipped_date"/></label></span><br/>
+ </form></div>
+ 
+<form>
+   <input type="submit" name="Add" value = "Add" id="addButton">
+   <input type="submit" name="Remove" value = "Remove" id="removeButton">
+</form>
+
+<br>
+
+<h2>Add Order Details</h2>
+<p>Add and Remove a M:M relationship between Orders and Products.
+Rows both in Orders and Products are not impacted</p>
+
+<div id = "main">	
+<form id="orderDetails">
+    <span><label>Order ID:
+    <input type="number" name="orderID" id="orderID" min="1"/></label></span><br/>
+    
+    <span><label>Product ID:
+    <input type="number" name="productID" id="productID" min="1"/></label></span><br/>
+
+    <span><label>Product Quantity:
+    <input type="number" name="productQty" id="productQty" min="1"/></label></span><br/>
+
+</form></div>  
+
+<form>
+  
+  <input type="submit" name="Add" value = "Add" id="addButton"/>
+  <input type="submit" name="Remove" value = "Remove" id="removeButton">
+</form>
+
+</body>
+</html>

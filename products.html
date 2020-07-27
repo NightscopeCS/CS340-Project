@@ -1,0 +1,67 @@
+<!DOCTYPE HTML>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>The Busy Bean Database</title>
+
+	<!-- Main Stylesheets -->
+	<link rel="stylesheet" href="style.css"/>
+</head>
+
+<body>
+    <h2>The Busy Bean Database</h2>
+    <h3>By Reed Hardin & Kazu Ishihara</h3>
+    <a href="index.html">Main</a>
+    <h2>Add/Remove Products</h2>
+
+    <div class="mainForm" id="prodForm">
+        <form>
+            <fieldset>
+                <legend>Product Information</legend>
+                <table>
+                    <tr>
+                        <td>ProductID: </td>
+                        <td>(auto)</td>
+                    <tr>
+                        <td>SupplierID: </td>
+                        <td><input type="text" /></td>
+                    </tr>
+                    <tr>
+                        <td>Name: </td>
+                        <td><input type="text" /></td>
+                    </tr>
+                    <tr>
+                        <td>Price: </td>
+                        <td><input type="text" /></td>
+                    </tr>
+                </table>
+                    </br>
+                    <input type="submit" name="action" value="Add"/>
+                    <input type="submit" name="action" value="Remove"/>
+            </fieldset>
+        </form>
+    </div>
+
+    <div class="mainForm" id="prodDetailsForm">
+        <form>
+            <fieldset>
+                <legend>Product Details</legend>
+                <table>
+                    <tr>
+                        <td>ProductID: </td>
+                        <td><input type="text" /></td>
+                    <tr>
+                        <td>BeanID: </td>
+                        <td><input type="text" /></td>
+                    </tr>
+                </table>
+                    </br>
+                    <input type="submit" name="action" value="Add"/>
+                    <input type="submit" name="action" value="Remove"/>
+            </fieldset>
+        </form>
+    </div>     
+    
+</body>
+</html>

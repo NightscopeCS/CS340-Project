@@ -1,0 +1,55 @@
+<!DOCTYPE HTML>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>The Busy Bean Database</title>
+
+	<!-- Main Stylesheets -->
+	<link rel="stylesheet" href="style.css"/>
+</head>
+
+<body>
+	<div>
+		<h2>The Busy Bean Database</h2>
+		<h3>By Reed Hardin & Kazu Ishihara</h3>
+		<h4>Menu of Operations</h4>
+    </div>
+
+	<div class="navMenu">
+	    <div class=navMenuTop>
+		    <ul>
+		      <li> <a href='customers.html'>Add/Remove Customers</a></li>
+		     	<p>INSERT or DELETE Customer from Customers table</p><br>
+		      <li> <a href='products.html'>Add/Remove Products</a></li>
+		      	<p>INSERT or DELETE Product from Products table</p><br>
+		      <li> <a href='orders.html'>Add/Remove Orders</a></li>
+		     	<p>INSERT or DELETE Order from Orders table</p><br>
+		      <li> <a href='beans.html'>Add/Remove Beans</a></li>
+		     	<p>INSERT or DELETE Bean from Beans table</p><br>
+		      <li> <a href='suppliers.html'>Add/Remove Suppliers</a></li>
+		     	<p>INSERT or DELETE Supplier from Suppliers table</p><br>
+		      <li> <a href='products.html'>Add/Remove Product Details</a></li>
+		     	<p>INSERT or DELETE product details to Products_Beans table (M:M)</p><br>
+		      <li> <a href='orders.html'>Add/Remove Order Details</a></li>
+		     	<p>INSERT or DELETE order details to Orders_Products table (M:M)</p><br>     
+	    	</ul>
+	    </div>
+
+	    <div class=navMenuBottom>
+		    <ul>
+		      <li> <a href='custName_Bean.html'>Display customer/bean names from orders </a></li>
+		     	<p>SELECT customer names and bean types from Orders</p><br>
+		      <li> <a href='custName_OrderName_Products_Suppliers.html'>Display customer order details</a></li>
+		      	<p>SELECT customer names, order numbers, products, product quantities and suppliers</p><br>
+		      <li> <a href='Search_Cust_Bean.html'>Display customer bean preferences </a></li>
+				<p>SELECT customer names based off bean type to see how popular a particular bean type is</p>
+				<p>Ability to search which customers prefer a certain type of bean with a bean type filter</p> <br>
+		      <li> <a href='Update_Suppliers.html'>Update Suppliers</a></li>
+		      	<p>UPDATE the Suppliers table</p><br>
+	    	</ul>
+	    </div>
+	</div>
+	
+</body>
+</html>

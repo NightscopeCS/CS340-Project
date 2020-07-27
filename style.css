@@ -1,0 +1,51 @@
+label {
+	display: block;
+	align-items: center;
+}
+
+li {
+  color: #FFFFFF;
+}
+
+img {
+  display: block;
+  width: 500px;
+  height: 500px;
+}
+
+.navMenuTop {
+  width: 450px;
+  position: relative;
+  top: 20px;
+  background: #32495F;
+}
+
+.navMenuBottom {
+  width: 450px;
+  position: relative;
+  top: 20px;
+  background: #32495F;
+}
+
+.navMenu a {
+  padding: 10px 6px 6px 6px;
+  font-size: 20px;
+  color: #FFFFFF;
+  display: block;
+  text-decoration: none;
+}
+
+.main {
+  margin-left: 310px;
+  font-size: 20px;
+  padding: 0px 10px;
+}
+
+.navMenu p {
+  padding: 0px;
+  font-size: 14px;
+}
+
+.navMenu a:hover {
+  color: #65A691;
+}
