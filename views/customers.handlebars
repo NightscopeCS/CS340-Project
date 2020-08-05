@@ -1,0 +1,42 @@
+<h1 class="title">Display Customers</h1>
+<a href="/" class="button">Home</a>
+</br>
+</br>
+
+<div>
+    <table>
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Name</th>
+                <th>Street</th>
+                <th>City</th>
+                <th>Country</th>
+                <th>Postal</th>
+                <th>Phone</th>
+                <th>Email</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            {{#each customers}}
+            <tr>
+                <td>{{customerID}}</td>
+                <td>{{customerName}}</td>
+                <td>{{customerStreet}}</td>
+                <td>{{customerCity}}</td>
+                <td>{{customerCountry}}</td>
+                <td>{{customerPostalCode}}</td>
+                <td>{{customerPhone}}</td>
+                <td>{{customerEmail}}</td>
+            </tr>
+            {{/each}}
+        </tbody>
+    </table>
+</div>
+
+<div>
+    </br>
+    <a href="/customers/add_customers" id="add_customers">Add Customers</a>
+</div>
+
