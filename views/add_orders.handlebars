@@ -1,0 +1,16 @@
+<a href="/">Home</a>
+<h1>Add Orders</h1>
+
+<div class="add_new">
+    <form action="/orders/add_orders" method="post"> 
+        <label>Order Date: <input type="date" name="odate" required></label>
+        <br>
+        <br>
+        <label>Shipped Date: <input type="date" name="sdate" required></label>
+        <br>
+        <br>
+        <input type="submit" value="Add" />
+    </form>
+    <br>
+    <button onclick="window.history.back()">Return</button>
+</div>

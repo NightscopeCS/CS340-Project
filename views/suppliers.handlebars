@@ -1,0 +1,38 @@
+<h1>">Display Suppliers</h1>
+<a href="/" class="button">Home</a>
+</br>
+</br>
+
+<div>
+    <table>
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Name</th>
+                <th>Street</th>
+                <th>City</th>
+                <th>Country</th>
+                <th>Postal</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            {{#each suppliers}}
+            <tr>
+                <td>{{supplierID}}</td>
+                <td>{{supplierName}}</td>
+                <td>{{supplierStreet}}</td>
+                <td>{{supplierCity}}</td>
+                <td>{{supplierCountry}}</td>
+                <td>{{supplierPostalCode}}</td>
+            </tr>
+            {{/each}}
+        </tbody>
+    </table>
+</div>
+
+<div>
+    </br>
+    <a href="/supplierss/add_suppliers" id="add_suppliers">Add Suppliers</a>
+</div>
+

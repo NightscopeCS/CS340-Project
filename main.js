@@ -12,9 +12,13 @@ app.set('view engine', 'handlebars');
 app.set('port', process.argv[2]);
 app.set('mysql', mysql);
 app.use('/customers', require('./customers.js'));
+app.use('/products', require('./products.js'));
+app.use('/orders', require('./orders.js'));
+app.use('/beans', require('./beans.js'));
+app.use('/suppliers', require('./suppliers.js'));
 
 app.get('/', function(req, res){
-  res.render('home', {title:'TBB'});
+  res.render('home', {title:'The Busy Bean Database'});
 });
 
 app.use(function(req,res){

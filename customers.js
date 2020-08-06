@@ -4,7 +4,7 @@ module.exports = function(){
   
     // Helper function to get all customers 
     function getCustomers(res, mysql, context, complete) {
-        let sql = "SELECT customerID AS id, customerName, customerStreet, customerCity, customerState, customerPostalCode, customerCountry, customerPhone, customerEmail FROM Customers";
+        let sql = "SELECT customerID, customerName, customerStreet, customerCity, customerState, customerPostalCode, customerCountry, customerPhone, customerEmail FROM Customers";
         mysql.pool.query(sql, function(error, results, fields) {
         if(error) {
             res.write(JSON.stringify(error));
